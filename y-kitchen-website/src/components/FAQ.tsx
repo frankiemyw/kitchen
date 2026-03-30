@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { faqs } from "@/data/faqs";
+import { faqSection } from "@/data/content";
 
 function FAQItem({
   question,
@@ -58,7 +59,7 @@ export default function FAQ() {
       <div className="max-w-2xl mx-auto px-5 sm:px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold text-charcoal mb-4 tracking-tight">
-            Frequently Asked Questions
+            {faqSection.heading}
           </h2>
         </div>
         <div className="bg-white rounded-2xl p-6 sm:p-8 border border-warm-border">

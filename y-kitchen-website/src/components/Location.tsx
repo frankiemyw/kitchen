@@ -1,4 +1,5 @@
 import { siteConfig } from "@/data/site";
+import { contactSection } from "@/data/content";
 
 export default function Location() {
   return (
@@ -6,11 +7,10 @@ export default function Location() {
       <div className="max-w-6xl mx-auto px-5 sm:px-6">
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-charcoal mb-4 tracking-tight">
-            Visit or Contact Us
+            {contactSection.heading}
           </h2>
           <p className="text-base sm:text-lg text-charcoal-muted max-w-xl mx-auto">
-            Want to dine in, ask about today&apos;s dishes, or place a catering
-            inquiry? We&apos;d love to hear from you.
+            {contactSection.description}
           </p>
         </div>
 
@@ -30,8 +30,7 @@ export default function Location() {
                   Address
                 </h3>
                 <p className="text-sm text-charcoal-muted leading-relaxed">
-                  Units CS 01 to 04, IT Center 2, EDSA cor. United St.,
-                  Mandaluyong City, Philippines
+                  {siteConfig.address}
                 </p>
               </div>
               <div className="bg-warm-white rounded-xl p-5 border border-warm-border">

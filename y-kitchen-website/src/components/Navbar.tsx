@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { siteConfig } from "@/data/site";
 
 const navLinks = [
   { label: "Menu", href: "#menu" },
@@ -17,7 +18,7 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-5 sm:px-6">
         <div className="flex items-center justify-between h-16">
           <a href="#home" className="text-xl font-bold text-charcoal tracking-tight">
-            Y Kitchen
+            {siteConfig.businessName}
           </a>
 
           {/* Desktop */}

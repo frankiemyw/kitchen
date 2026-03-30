@@ -1,4 +1,5 @@
 import { menuCategories } from "@/data/menu";
+import { menuSection } from "@/data/content";
 
 export default function Menu() {
   return (
@@ -6,11 +7,10 @@ export default function Menu() {
       <div className="max-w-4xl mx-auto px-5 sm:px-6">
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-charcoal mb-4 tracking-tight">
-            Simple, Satisfying, and Budget-Friendly
+            {menuSection.heading}
           </h2>
           <p className="text-base sm:text-lg text-charcoal-muted max-w-xl mx-auto">
-            Whether you want a quick solo meal or something more filling,
-            Y Kitchen offers practical food choices that are easy to enjoy.
+            {menuSection.description}
           </p>
         </div>
 
@@ -65,9 +65,7 @@ export default function Menu() {
         </div>
 
         <div className="mt-10 pt-6 border-t border-warm-border text-center">
-          <p className="text-sm text-charcoal-muted">
-            All meals come with free soup and water. Dishes rotate daily.
-          </p>
+          <p className="text-sm text-charcoal-muted">{menuSection.note}</p>
         </div>
       </div>
     </section>

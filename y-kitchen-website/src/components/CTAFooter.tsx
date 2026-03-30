@@ -1,4 +1,5 @@
 import { siteConfig } from "@/data/site";
+import { footer } from "@/data/content";
 
 export default function CTAFooter() {
   return (
@@ -7,26 +8,23 @@ export default function CTAFooter() {
       <div className="py-16 sm:py-20">
         <div className="max-w-2xl mx-auto px-5 sm:px-6 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4 tracking-tight">
-            Good Food, Fair Prices,
-            <br />
-            Easy Ordering
+            {footer.ctaHeading}
           </h2>
           <p className="text-gray-400 max-w-md mx-auto mb-8">
-            Whether you need a quick everyday meal or food for a group,
-            Y Kitchen is ready to serve.
+            {footer.ctaDescription}
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
               href="#menu"
               className="bg-red-brand text-white px-7 py-3.5 rounded-full text-base font-semibold hover:bg-red-dark transition-colors"
             >
-              View Menu
+              {footer.primaryButton}
             </a>
             <a
               href="#contact"
               className="bg-white/10 text-white px-7 py-3.5 rounded-full text-base font-semibold hover:bg-white/20 transition-colors border border-white/20"
             >
-              Contact Us
+              {footer.secondaryButton}
             </a>
           </div>
         </div>
@@ -41,8 +39,7 @@ export default function CTAFooter() {
                 {siteConfig.businessName}
               </h3>
               <p className="text-sm text-gray-500 leading-relaxed">
-                Affordable Filipino meals for everyday dining, takeout, and
-                group orders in Mandaluyong.
+                {footer.footerDescription}
               </p>
             </div>
             <div>
@@ -89,8 +86,7 @@ export default function CTAFooter() {
           </div>
           <div className="border-t border-white/10 pt-6 text-center">
             <p className="text-xs text-gray-600 mb-1">
-              Follow us or message us for menu updates, daily availability, and
-              catering inquiries.
+              {footer.followNote}
             </p>
             <p className="text-xs text-gray-600">
               &copy; {new Date().getFullYear()} {siteConfig.businessName}. All

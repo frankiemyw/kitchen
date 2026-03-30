@@ -1,4 +1,5 @@
 import { featuredMeals } from "@/data/menu";
+import { featuredSection } from "@/data/content";
 
 export default function FeaturedMeals() {
   return (
@@ -6,11 +7,10 @@ export default function FeaturedMeals() {
       <div className="max-w-6xl mx-auto px-5 sm:px-6">
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-charcoal mb-4 tracking-tight">
-            Customer Favorites
+            {featuredSection.heading}
           </h2>
           <p className="text-base sm:text-lg text-charcoal-muted max-w-xl mx-auto">
-            From Filipino classics to practical set meals, these are some of the
-            options customers enjoy at Y Kitchen.
+            {featuredSection.description}
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
