@@ -1,54 +1,80 @@
 const menuCategories = [
   {
-    name: "Budget Meals — ₱99",
-    description: "One dish + rice with free soup and water",
+    name: "Chicken or Pork Meals",
     items: [
-      { name: "Chicken Adobo", description: "Classic soy-vinegar braised chicken" },
-      { name: "Pork Sinigang", description: "Tangy tamarind pork soup with vegetables" },
-      { name: "Giniling", description: "Savory ground pork with potatoes and carrots" },
-      { name: "Tortang Talong", description: "Grilled eggplant omelette" },
-      { name: "Bangus Belly", description: "Pan-fried milkfish belly, crispy and flavorful" },
-      { name: "Chicken Curry", description: "Creamy coconut curry with tender chicken" },
+      {
+        name: "1 Entree + Rice",
+        description: "Choice of chicken or pork dish with steamed rice",
+        price: "₱109",
+      },
+      {
+        name: "1 Entree + Rice + Veggies",
+        description: "Chicken or pork dish with vegetables and steamed rice",
+        price: "₱139",
+      },
+      {
+        name: "2 Entrees + Rice",
+        description: "Two chicken or pork dishes with steamed rice",
+        price: "₱170",
+      },
     ],
   },
   {
-    name: "Value Meals — ₱129",
-    description: "Two dishes + rice with free soup and water",
+    name: "Beef Meals",
     items: [
       {
-        name: "Bistek Tagalog + Pinakbet",
-        description: "Soy-citrus beef with sautéed mixed vegetables",
+        name: "1 Beef + Rice",
+        description: "Choice of beef dish with steamed rice",
+        price: "₱129",
       },
       {
-        name: "Pork Adobo + Chopsuey",
-        description: "Braised pork with stir-fried mixed veggies",
+        name: "1 Beef + Rice + Veggies",
+        description: "Beef dish with vegetables and steamed rice",
+        price: "₱150",
       },
       {
-        name: "Chicken Inasal + Ensalada",
-        description: "Grilled marinated chicken with fresh side salad",
+        name: "2 Entrees + Rice (w/ Beef)",
+        description: "Two entrees including a beef dish, with steamed rice",
+        price: "₱180",
       },
+    ],
+  },
+  {
+    name: "Vegetable Meals",
+    items: [
       {
-        name: "Fried Tilapia + Sinigang na Hipon",
-        description: "Crispy fried fish with shrimp sour soup",
+        name: "1 Vegetables + Rice",
+        description: "Choice of vegetable dish with steamed rice",
+        price: "₱90",
       },
-      {
-        name: "Menudo + Lumpia",
-        description: "Pork stew with spring rolls",
-      },
-      {
-        name: "Caldereta + Gulay",
-        description: "Rich beef stew with sautéed greens",
-      },
+    ],
+  },
+  {
+    name: "Sample Dishes",
+    subtitle: "Available dishes rotate daily. Here are some favorites:",
+    items: [
+      { name: "Chicken Adobo", description: "Classic soy-vinegar braised chicken", price: "" },
+      { name: "Pork Sinigang", description: "Tangy tamarind pork soup with vegetables", price: "" },
+      { name: "Giniling", description: "Savory ground pork with potatoes and carrots", price: "" },
+      { name: "Chicken Curry", description: "Creamy coconut curry with tender chicken", price: "" },
+      { name: "Beef Caldereta", description: "Rich tomato-based beef stew", price: "" },
+      { name: "Bistek Tagalog", description: "Soy-citrus marinated beef with onions", price: "" },
+      { name: "Pinakbet", description: "Sautéed mixed vegetables with shrimp paste", price: "" },
+      { name: "Chopsuey", description: "Stir-fried mixed vegetables", price: "" },
+      { name: "Tortang Talong", description: "Grilled eggplant omelette", price: "" },
+      { name: "Bangus Belly", description: "Pan-fried milkfish belly, crispy and flavorful", price: "" },
+      { name: "Menudo", description: "Pork and liver stew with potatoes and carrots", price: "" },
+      { name: "Pork Adobo", description: "Braised pork in soy-vinegar sauce", price: "" },
     ],
   },
   {
     name: "Extras",
-    description: "Add-ons and drinks",
     items: [
-      { name: "Extra Rice", description: "₱15" },
-      { name: "Softdrinks", description: "₱25" },
-      { name: "Iced Tea", description: "₱30" },
-      { name: "Bottled Water", description: "Free with any meal" },
+      { name: "Extra Rice", description: "", price: "₱15" },
+      { name: "Softdrinks", description: "", price: "₱25" },
+      { name: "Iced Tea", description: "", price: "₱30" },
+      { name: "Bottled Water", description: "Free with any meal", price: "—" },
+      { name: "Soup", description: "Free with any meal", price: "—" },
     ],
   },
 ];
@@ -62,8 +88,8 @@ export default function Menu() {
             Our Menu
           </h2>
           <p className="text-lg text-charcoal-light max-w-2xl mx-auto">
-            Simple, satisfying meals made fresh every day. All prices include
-            rice, soup, and water.
+            Freshly-cooked Filipino meals every day. All meals include free
+            soup and water.
           </p>
         </div>
 
@@ -74,28 +100,39 @@ export default function Menu() {
                 <h3 className="text-2xl font-bold text-charcoal">
                   {category.name}
                 </h3>
-                <p className="text-charcoal-light mt-1">{category.description}</p>
+                {"subtitle" in category && category.subtitle && (
+                  <p className="text-charcoal-light mt-1 text-sm">
+                    {category.subtitle}
+                  </p>
+                )}
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {category.items.map((item) => (
                   <div
                     key={item.name}
-                    className="bg-white rounded-xl p-4 flex gap-4 items-start border border-gray-100"
+                    className="bg-white rounded-xl p-4 flex gap-4 items-center border border-gray-100"
                   >
                     {/* Thumbnail placeholder */}
-                    <div className="w-16 h-16 rounded-lg bg-warm-gray flex-shrink-0 flex items-center justify-center">
+                    <div className="w-14 h-14 rounded-lg bg-warm-gray flex-shrink-0 flex items-center justify-center">
                       <span className="text-[10px] text-charcoal-light text-center leading-tight">
                         Photo
                       </span>
                     </div>
-                    <div>
+                    <div className="flex-1 min-w-0">
                       <h4 className="font-semibold text-charcoal text-sm">
                         {item.name}
                       </h4>
-                      <p className="text-xs text-charcoal-light mt-0.5 leading-relaxed">
-                        {item.description}
-                      </p>
+                      {item.description && (
+                        <p className="text-xs text-charcoal-light mt-0.5 leading-relaxed">
+                          {item.description}
+                        </p>
+                      )}
                     </div>
+                    {item.price && (
+                      <span className="text-sm font-bold text-red-brand whitespace-nowrap">
+                        {item.price}
+                      </span>
+                    )}
                   </div>
                 ))}
               </div>
@@ -105,7 +142,7 @@ export default function Menu() {
 
         <div className="text-center mt-12">
           <p className="text-sm text-charcoal-light">
-            Menu items may vary daily. Prices are subject to change.
+            Dishes rotate daily. Prices are subject to change.
           </p>
         </div>
       </div>

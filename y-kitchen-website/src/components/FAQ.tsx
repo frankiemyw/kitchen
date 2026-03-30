@@ -6,22 +6,27 @@ const faqs = [
   {
     question: "What are your meal prices?",
     answer:
-      "Our budget meals start at ₱99 (one dish + rice with free soup and water). Value meals with two dishes + rice are ₱129, also with free soup and water.",
+      "Our meals start at ₱90 for a vegetable dish with rice. Chicken or pork with rice is ₱109. Add veggies for ₱139. Beef meals start at ₱129. Two-entree combos are ₱170–₱180. All meals come with free soup and water.",
   },
   {
     question: "Do you accept catering orders?",
     answer:
-      "Yes! We offer party trays for office meetings, birthdays, and small events. Please place your order at least 2 days in advance. You can call us or send an inquiry through the website.",
+      "Yes! We offer party trays for government offices, corporate events, LGU functions, team lunches, birthdays, and more. Please place your order at least 2 days in advance. Call us or send an inquiry through the website.",
+  },
+  {
+    question: "Who do you serve?",
+    answer:
+      "We serve everyone — from individual dine-in customers to large organizations. Our regular clients include government agencies, LGUs, corporations, office workers, condo residents, and group buyers of all kinds.",
   },
   {
     question: "Do you offer delivery?",
     answer:
-      "We currently serve dine-in customers and accept pick-up orders for party trays. For delivery, you can reach us through popular food delivery apps. Contact us for details.",
+      "We serve dine-in customers and accept pick-up orders for party trays. For delivery, you can reach us through popular food delivery apps. Contact us for details.",
   },
   {
-    question: "Can I customize my order for catering?",
+    question: "Can I customize my catering order?",
     answer:
-      "Absolutely. We can mix and match dishes for your party trays based on your preferences and budget. Just let us know when you inquire.",
+      "Absolutely. We can mix and match dishes for your party trays based on your preferences and budget. Custom tray combinations and bulk orders are available upon request.",
   },
   {
     question: "What time do you open?",
@@ -29,9 +34,9 @@ const faqs = [
       "We're open Monday to Saturday from 7:00 AM to 7:00 PM, and Sundays from 8:00 AM to 5:00 PM.",
   },
   {
-    question: "Is Y Kitchen halal?",
+    question: "Do you offer canteen or daily meal service?",
     answer:
-      "Our menu primarily features traditional Filipino dishes. Please contact us directly if you have specific dietary requirements and we'll do our best to accommodate you.",
+      "Yes. We can set up daily meal service for offices, agencies, and organizations. Contact us to discuss a regular arrangement that works for your team.",
   },
 ];
 

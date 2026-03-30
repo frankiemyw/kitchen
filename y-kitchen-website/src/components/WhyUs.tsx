@@ -1,27 +1,27 @@
 const reasons = [
   {
-    icon: "🍚",
+    icon: "🔥",
+    title: "Freshly-Cooked Daily",
+    description:
+      "Every dish is cooked fresh — never reheated, never leftover. You get honest, home-style Filipino food every time.",
+  },
+  {
+    icon: "💰",
     title: "Affordable Meals",
     description:
-      "Complete meals starting at ₱99 with rice, soup, and water. No hidden charges.",
+      "Complete meals starting at ₱90 with rice, soup, and water. Real value with no hidden charges.",
   },
   {
-    icon: "🔥",
-    title: "Cooked Fresh Daily",
+    icon: "🏛️",
+    title: "Trusted by Organizations",
     description:
-      "We prepare everything fresh each morning. No reheated leftovers — just honest, home-style cooking.",
+      "We serve government agencies, LGUs, corporations, and offices. Reliable food for meetings, events, and daily canteen needs.",
   },
   {
-    icon: "🏢",
-    title: "Great for Groups",
+    icon: "🍱",
+    title: "Catering & Party Trays",
     description:
-      "Feeding your team or hosting a small event? Our catering trays make group ordering easy.",
-  },
-  {
-    icon: "✨",
-    title: "Clean & Comfortable",
-    description:
-      "A well-kept space where you can sit down, relax, and enjoy a proper meal.",
+      "From small office lunches to large group orders — our catering trays are ready for any occasion.",
   },
 ];
 
@@ -34,8 +34,8 @@ export default function WhyUs() {
             Why Choose Y Kitchen?
           </h2>
           <p className="text-lg text-charcoal-light max-w-2xl mx-auto">
-            Good food doesn&apos;t have to be expensive. We keep things simple,
-            fresh, and satisfying — every single day.
+            Good food doesn&apos;t have to be expensive. We keep things fresh,
+            affordable, and satisfying — every single day.
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">

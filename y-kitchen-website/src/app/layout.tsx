@@ -2,23 +2,28 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Y Kitchen — Affordable Filipino Meals, Catering & Party Trays",
+  title: "Y Kitchen — Freshly-Cooked Filipino Meals, Catering & Party Trays",
   description:
-    "Y Kitchen serves delicious, affordable Filipino meals for dine-in, catering, and party trays. Perfect for office workers, condo residents, and group orders. Starting at ₱99.",
+    "Y Kitchen serves freshly-cooked, affordable Filipino meals for dine-in, canteen service, catering, and party trays. Trusted by government agencies, LGUs, corporations, and organizations. Starting at ₱90.",
   keywords: [
     "Filipino food",
+    "freshly-cooked meals",
     "affordable meals",
     "catering",
     "party trays",
+    "canteen food",
     "dine-in restaurant",
     "Y Kitchen",
     "office lunch",
+    "government catering",
+    "corporate meals",
     "group orders",
+    "LGU catering",
   ],
   openGraph: {
-    title: "Y Kitchen — Affordable Filipino Meals, Catering & Party Trays",
+    title: "Y Kitchen — Freshly-Cooked Filipino Meals, Catering & Party Trays",
     description:
-      "Delicious Filipino meals starting at ₱99. Dine-in, catering, and party trays for every occasion.",
+      "Freshly-cooked Filipino meals starting at ₱90. Dine-in, canteen service, catering, and party trays for government agencies, corporations, and organizations.",
     type: "website",
     locale: "en_PH",
     siteName: "Y Kitchen",
@@ -45,7 +50,7 @@ export default function RootLayout({
               "@type": "Restaurant",
               name: "Y Kitchen",
               description:
-                "Affordable Filipino meals for dine-in, catering, and party trays.",
+                "Freshly-cooked, affordable Filipino meals for dine-in, canteen service, catering, and party trays.",
               servesCuisine: "Filipino",
               priceRange: "₱",
               address: {
@@ -63,13 +68,21 @@ export default function RootLayout({
                 hasMenuSection: [
                   {
                     "@type": "MenuSection",
-                    name: "Budget Meals",
-                    description: "One dish + rice with free soup and water",
+                    name: "Chicken or Pork Meals",
+                    description:
+                      "₱109–₱170. Freshly-cooked chicken or pork with rice, free soup and water",
                   },
                   {
                     "@type": "MenuSection",
-                    name: "Value Meals",
-                    description: "Two dishes + rice with free soup and water",
+                    name: "Beef Meals",
+                    description:
+                      "₱129–₱180. Freshly-cooked beef dishes with rice, free soup and water",
+                  },
+                  {
+                    "@type": "MenuSection",
+                    name: "Vegetable Meals",
+                    description:
+                      "₱90. Vegetable dish with rice, free soup and water",
                   },
                 ],
               },

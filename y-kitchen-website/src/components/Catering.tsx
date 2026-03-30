@@ -20,9 +20,9 @@ const partyTrays = [
     price: "₱500",
   },
   {
-    name: "Caldereta Tray",
+    name: "Beef Caldereta Tray",
     serves: "Good for 8–10 pax",
-    price: "₱800",
+    price: "₱850",
   },
   {
     name: "Mixed Fruit Salad",
@@ -37,12 +37,12 @@ export default function Catering() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-14">
           <h2 className="text-3xl sm:text-4xl font-bold text-charcoal mb-4">
-            Catering & Party Trays
+            Catering &amp; Party Trays
           </h2>
           <p className="text-lg text-charcoal-light max-w-2xl mx-auto">
-            Feeding a group? We&apos;ve got you covered. Our party trays are
-            perfect for office meetings, small celebrations, and weekend
-            gatherings.
+            Feeding a team, a department, or an entire event? Our freshly-cooked
+            party trays are trusted by government agencies, corporations, LGUs,
+            and organizations of all sizes.
           </p>
         </div>
 
@@ -69,12 +69,12 @@ export default function Catering() {
 
         <div className="bg-charcoal rounded-2xl p-8 sm:p-12 text-center">
           <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4">
-            Need Catering for Your Event?
+            Need Catering for Your Organization?
           </h3>
           <p className="text-gray-300 max-w-xl mx-auto mb-8">
-            Whether it&apos;s an office lunch, a birthday celebration, or a
-            weekend get-together — we&apos;ll prepare everything so you can
-            focus on enjoying.
+            We cater for government offices, corporate meetings, LGU events,
+            team lunches, and private celebrations. Let us handle the food
+            so you can focus on what matters.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -92,7 +92,7 @@ export default function Catering() {
           </div>
           <p className="text-xs text-gray-400 mt-6">
             We accept orders at least 2 days in advance. Custom tray
-            combinations available upon request.
+            combinations and bulk orders available upon request.
           </p>
         </div>
       </div>

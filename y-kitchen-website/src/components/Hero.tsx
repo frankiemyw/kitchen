@@ -10,17 +10,18 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 py-20 text-center">
         <span className="inline-block bg-gold/20 text-gold-light text-sm font-semibold px-4 py-1.5 rounded-full mb-6">
-          Filipino Comfort Food
+          Freshly-Cooked Filipino Meals
         </span>
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-          Masarap, Mura, at
+          Masarap, Abot-Kaya, at
           <br />
-          <span className="text-gold">Laging Fresh</span>
+          <span className="text-gold">Laging Freshly-Cooked</span>
         </h1>
         <p className="text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto mb-10">
-          Everyday Filipino meals starting at just{" "}
-          <strong className="text-white">₱99</strong> — with free soup and
-          water. Perfect for lunch, merienda, or your next office meeting.
+          Freshly-cooked Filipino meals starting at just{" "}
+          <strong className="text-white">₱90</strong> — with free soup and
+          water. Perfect for offices, government agencies, corporate teams,
+          and everyday lunch.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a

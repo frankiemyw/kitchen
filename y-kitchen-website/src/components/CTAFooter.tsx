@@ -8,8 +8,8 @@ export default function CTAFooter() {
             Hungry? Let&apos;s Fix That.
           </h2>
           <p className="text-gray-300 max-w-xl mx-auto mb-8">
-            Visit us today for a fresh, affordable meal — or get in touch to
-            order party trays for your next event.
+            Visit us for a freshly-cooked meal — or get in touch for catering,
+            party trays, and daily canteen service for your organization.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -22,7 +22,7 @@ export default function CTAFooter() {
               href="#catering"
               className="bg-gold text-charcoal px-8 py-3.5 rounded-full text-lg font-semibold hover:bg-gold-light transition-colors"
             >
-              Order Party Trays
+              Order Catering
             </a>
           </div>
         </div>
@@ -35,8 +35,8 @@ export default function CTAFooter() {
             <div>
               <h3 className="text-xl font-bold text-gold mb-3">Y Kitchen</h3>
               <p className="text-sm text-gray-400 leading-relaxed">
-                Affordable Filipino meals for everyday hunger. Dine-in,
-                catering, and party trays.
+                Freshly-cooked Filipino meals for everyday hunger.
+                Dine-in, canteen service, catering, and party trays.
               </p>
             </div>
             <div>

@@ -1,21 +1,24 @@
 const featured = [
   {
-    name: "Chicken Adobo",
-    description: "Classic braised chicken in soy-vinegar sauce, served with steamed rice.",
-    price: "₱99",
+    name: "Chicken Adobo + Rice",
+    description:
+      "Classic braised chicken in soy-vinegar sauce, served with steamed rice, free soup and water.",
+    price: "₱109",
     tag: "Best Seller",
   },
   {
-    name: "Pork Sinigang",
-    description: "Tangy tamarind soup with tender pork and fresh vegetables.",
-    price: "₱99",
+    name: "Pork Sinigang + Rice + Veggies",
+    description:
+      "Tangy tamarind pork soup with fresh vegetables and steamed rice. A complete, hearty meal.",
+    price: "₱139",
     tag: "Customer Favorite",
   },
   {
-    name: "Bistek Tagalog + Pinakbet",
-    description: "Soy-citrus beef with sautéed mixed vegetables. Two dishes, one great meal.",
-    price: "₱129",
-    tag: "Value Meal",
+    name: "Beef Caldereta + Rice + Veggies",
+    description:
+      "Rich, savory beef stew with vegetables and rice. Our premium combo for a satisfying lunch.",
+    price: "₱150",
+    tag: "Premium Pick",
   },
 ];
 
@@ -28,7 +31,7 @@ export default function FeaturedMeals() {
             Featured Meals
           </h2>
           <p className="text-lg text-charcoal-light">
-            A taste of what&apos;s waiting for you at Y Kitchen.
+            A taste of what&apos;s freshly cooked at Y Kitchen — every day.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -61,7 +64,7 @@ export default function FeaturedMeals() {
                   {meal.description}
                 </p>
                 <p className="text-xs text-gold mt-3 font-medium">
-                  Includes rice + free soup & water
+                  All meals include free soup &amp; water
                 </p>
               </div>
             </div>

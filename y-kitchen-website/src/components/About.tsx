@@ -16,20 +16,22 @@ export default function About() {
             </h2>
             <div className="space-y-4 text-charcoal-light leading-relaxed">
               <p>
-                Y Kitchen started with a simple idea: everyone deserves a good,
-                honest meal without breaking the bank. We serve everyday Filipino
-                favorites — the kind of food that feels like home.
+                Y Kitchen was built on a simple belief: everyone deserves a
+                freshly-cooked, honest meal without breaking the bank. We serve
+                the everyday Filipino favorites you grew up with — the kind of
+                food that feels like home.
               </p>
               <p>
-                Our kitchen opens early and cooks fresh every day. From classic
-                adobo to comforting sinigang, every dish is made with care using
-                quality ingredients. No shortcuts, no compromises.
+                Our kitchen opens early and cooks everything fresh, every day.
+                From classic adobo to comforting sinigang and hearty caldereta,
+                every dish is prepared with care using quality ingredients. No
+                shortcuts, no compromises.
               </p>
               <p>
-                Whether you&apos;re grabbing a quick lunch from the office,
-                feeding your team for a meeting, or ordering party trays for a
-                weekend celebration — Y Kitchen is here to make it easy and
-                delicious.
+                We proudly serve government agencies, LGUs, corporations, office
+                workers, and condo residents. Whether it&apos;s a daily canteen
+                setup, a corporate meeting, or party trays for a weekend
+                celebration — Y Kitchen delivers.
               </p>
             </div>
             <div className="grid grid-cols-3 gap-6 mt-8">
@@ -40,7 +42,7 @@ export default function About() {
                 </div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-red-brand">₱99</div>
+                <div className="text-2xl font-bold text-red-brand">₱90</div>
                 <div className="text-xs text-charcoal-light mt-1">
                   Starting Price
                 </div>
