@@ -1,32 +1,28 @@
 import type { Metadata } from "next";
+import { siteConfig } from "@/data/site";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Y Kitchen — Freshly-Cooked Filipino Meals, Catering & Party Trays",
-  description:
-    "Fresh Filipino food cooked from scratch every morning. Meals from ₱90 with free soup and water. Dine-in, catering, and party trays for offices, government agencies, and events of any size.",
+  title: siteConfig.seo.title,
+  description: siteConfig.seo.description,
   keywords: [
-    "Filipino food",
-    "freshly-cooked meals",
-    "affordable meals",
-    "catering",
-    "party trays",
-    "canteen food",
-    "dine-in restaurant",
     "Y Kitchen",
-    "office lunch",
-    "government catering",
-    "corporate meals",
+    "affordable Filipino meals",
+    "Filipino food Mandaluyong",
+    "catering Mandaluyong",
+    "party trays",
+    "dine-in restaurant",
+    "takeout Filipino food",
+    "office lunch Mandaluyong",
+    "budget meals",
     "group orders",
-    "LGU catering",
   ],
   openGraph: {
-    title: "Y Kitchen — Freshly-Cooked Filipino Meals, Catering & Party Trays",
-    description:
-      "Fresh Filipino food cooked from scratch every morning. Meals from ₱90 with free soup and water. Dine-in, catering, and party trays for any occasion.",
+    title: siteConfig.seo.ogTitle,
+    description: siteConfig.seo.ogDescription,
     type: "website",
     locale: "en_PH",
-    siteName: "Y Kitchen",
+    siteName: siteConfig.businessName,
   },
   robots: {
     index: true,
@@ -48,41 +44,30 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Restaurant",
-              name: "Y Kitchen",
-              description:
-                "Fresh Filipino food cooked from scratch every day. Affordable meals, catering, and party trays.",
+              name: siteConfig.businessName,
+              description: siteConfig.seo.description,
               servesCuisine: "Filipino",
               priceRange: "₱",
               address: {
                 "@type": "PostalAddress",
-                streetAddress: "[Your Street Address]",
-                addressLocality: "[City]",
-                addressRegion: "[Province]",
+                streetAddress:
+                  "Units CS 01 to 04, IT Center 2, EDSA cor. United St.",
+                addressLocality: "Mandaluyong City",
+                addressRegion: "Metro Manila",
                 addressCountry: "PH",
               },
-              telephone: "[Your Phone Number]",
-              url: "[Your Website URL]",
-              menu: "[Your Website URL]/#menu",
+              telephone: siteConfig.telephone[0],
+              email: siteConfig.email,
+              url: siteConfig.facebook,
+              menu: "#menu",
               hasMenu: {
                 "@type": "Menu",
                 hasMenuSection: [
                   {
                     "@type": "MenuSection",
-                    name: "Chicken or Pork Meals",
+                    name: "Dine-In Meal Sets",
                     description:
-                      "₱109–₱170. Freshly-cooked chicken or pork with rice, free soup and water",
-                  },
-                  {
-                    "@type": "MenuSection",
-                    name: "Beef Meals",
-                    description:
-                      "₱129–₱180. Freshly-cooked beef dishes with rice, free soup and water",
-                  },
-                  {
-                    "@type": "MenuSection",
-                    name: "Vegetable Meals",
-                    description:
-                      "₱90. Vegetable dish with rice, free soup and water",
+                      "Affordable Filipino meal sets from ₱90 to ₱180",
                   },
                 ],
               },

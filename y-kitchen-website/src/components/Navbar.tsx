@@ -21,7 +21,7 @@ export default function Navbar() {
             Y Kitchen
           </a>
 
-          {/* Desktop nav */}
+          {/* Desktop */}
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
               <a
@@ -33,39 +33,24 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href="#catering"
+              href="#contact"
               className="bg-red-brand text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-red-dark transition-colors"
             >
-              Order Catering
+              Order Now
             </a>
           </div>
 
-          {/* Mobile menu button */}
+          {/* Mobile toggle */}
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="md:hidden p-2 text-charcoal"
             aria-label="Toggle menu"
           >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               {isOpen ? (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               ) : (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
               )}
             </svg>
           </button>
@@ -87,11 +72,11 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href="#catering"
+              href="#contact"
               onClick={() => setIsOpen(false)}
               className="block text-center bg-red-brand text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-red-dark transition-colors"
             >
-              Order Catering
+              Order Now
             </a>
           </div>
         </div>

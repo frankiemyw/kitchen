@@ -1,24 +1,24 @@
+import { siteConfig } from "@/data/site";
+
 export default function Location() {
   return (
     <section id="contact" className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-14">
           <h2 className="text-3xl sm:text-4xl font-bold text-charcoal mb-4">
-            Come Visit Us
+            Visit or Contact Us
           </h2>
           <p className="text-lg text-charcoal-light">
-            Drop by for a meal, or get in touch if you need catering.
-            We&apos;d love to hear from you.
+            Want to dine in, ask about today&apos;s dishes, or place a catering
+            inquiry? We would love to hear from you.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-          {/* Map placeholder — replace with a Google Maps embed */}
+          {/* Replace with embedded Google Map */}
           <div className="aspect-[4/3] lg:aspect-auto bg-warm-gray rounded-2xl flex items-center justify-center min-h-[300px]">
             <div className="text-center text-charcoal-light">
-              <p className="text-sm mb-2">
-                [Embed Google Map here]
-              </p>
+              <p className="text-sm mb-2">[Embed Google Map here]</p>
               <p className="text-xs">
                 Replace with an iframe from Google Maps
               </p>
@@ -28,70 +28,98 @@ export default function Location() {
           <div className="space-y-8">
             <div>
               <h3 className="text-sm font-semibold text-red-brand uppercase tracking-wider mb-2">
-                Where We Are
+                Address
               </h3>
               <p className="text-charcoal-light leading-relaxed">
-                {/* REPLACE: Put your actual address here */}
-                [Your Street Address]
-                <br />
-                [Barangay, City, Province]
-                <br />
-                Philippines
+                {siteConfig.address}
               </p>
             </div>
 
             <div>
               <h3 className="text-sm font-semibold text-red-brand uppercase tracking-wider mb-2">
-                When We&apos;re Open
+                Business Hours
               </h3>
-              <div className="text-charcoal-light space-y-1">
-                <p>Monday – Saturday: 7:00 AM – 7:00 PM</p>
-                <p>Sunday: 8:00 AM – 5:00 PM</p>
-              </div>
+              <p className="text-charcoal-light">{siteConfig.hours}</p>
             </div>
 
             <div>
               <h3 className="text-sm font-semibold text-red-brand uppercase tracking-wider mb-2">
-                Get in Touch
+                Contact
               </h3>
               <div className="text-charcoal-light space-y-1">
-                {/* REPLACE: Put your real contact details here */}
                 <p>
-                  Phone:{" "}
-                  <a
-                    href="tel:[YOUR-PHONE-NUMBER]"
-                    className="text-charcoal hover:text-red-brand transition-colors"
-                  >
-                    [Your Phone Number]
-                  </a>
+                  Tel:{" "}
+                  {siteConfig.telephone.map((num, i) => (
+                    <span key={num}>
+                      {i > 0 && " / "}
+                      <a
+                        href={`tel:${num}`}
+                        className="text-charcoal hover:text-red-brand transition-colors"
+                      >
+                        {num}
+                      </a>
+                    </span>
+                  ))}
+                </p>
+                <p>
+                  Mobile:{" "}
+                  {siteConfig.mobile.map((num, i) => (
+                    <span key={num}>
+                      {i > 0 && " / "}
+                      <a
+                        href={`tel:${num}`}
+                        className="text-charcoal hover:text-red-brand transition-colors"
+                      >
+                        {num}
+                      </a>
+                    </span>
+                  ))}
                 </p>
                 <p>
                   Email:{" "}
                   <a
-                    href="mailto:[YOUR-EMAIL]"
+                    href={`mailto:${siteConfig.email}`}
                     className="text-charcoal hover:text-red-brand transition-colors"
                   >
-                    [your@email.com]
+                    {siteConfig.email}
                   </a>
                 </p>
                 <p>
                   Facebook:{" "}
                   <a
-                    href="#"
+                    href={siteConfig.facebook}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-charcoal hover:text-red-brand transition-colors"
                   >
-                    [Your Facebook Page]
+                    {siteConfig.facebookLabel}
                   </a>
                 </p>
               </div>
             </div>
 
-            <a
-              href="tel:[YOUR-PHONE-NUMBER]"
-              className="inline-block bg-red-brand text-white px-8 py-3 rounded-full font-semibold hover:bg-red-dark transition-colors"
-            >
-              Call to Order
-            </a>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <a
+                href={`tel:${siteConfig.mobile[0]}`}
+                className="bg-red-brand text-white px-6 py-3 rounded-full font-semibold hover:bg-red-dark transition-colors text-center"
+              >
+                Call Now
+              </a>
+              <a
+                href={siteConfig.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-charcoal text-white px-6 py-3 rounded-full font-semibold hover:bg-charcoal-light transition-colors text-center"
+              >
+                Message Us
+              </a>
+              <a
+                href="#contact"
+                className="border-2 border-charcoal text-charcoal px-6 py-3 rounded-full font-semibold hover:bg-charcoal hover:text-white transition-colors text-center"
+              >
+                Find Us
+              </a>
+            </div>
           </div>
         </div>
       </div>

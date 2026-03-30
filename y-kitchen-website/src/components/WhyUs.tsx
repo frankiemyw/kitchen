@@ -1,27 +1,27 @@
 const reasons = [
   {
-    icon: "🔥",
-    title: "Cooked Fresh, Every Day",
-    description:
-      "Nothing sits around. We start cooking early each morning so every plate that goes out is freshly made — the way it should be.",
-  },
-  {
     icon: "💰",
-    title: "Real Food, Real Prices",
+    title: "Affordable Every Day",
     description:
-      "A full meal with rice, soup, and water starts at ₱90. No tricks, no tiny portions. Just honest food at a price that makes sense.",
+      "Our meal options are designed to be satisfying and budget-friendly, making Y Kitchen a practical choice for lunch, dinner, or takeout.",
   },
   {
-    icon: "🏢",
-    title: "Built for Groups",
+    icon: "🍛",
+    title: "Comforting Filipino Favorites",
     description:
-      "We regularly handle orders for offices, government teams, and corporate groups. Whether it's 10 people or 100, we've got the kitchen for it.",
+      "We serve familiar dishes people enjoy again and again — simple, hearty meals that feel reliable and enjoyable any day of the week.",
+  },
+  {
+    icon: "⏱️",
+    title: "Great for Busy Schedules",
+    description:
+      "Whether you are on a lunch break, ordering for the office, or bringing home food after work, we make ordering easy and convenient.",
   },
   {
     icon: "🍱",
-    title: "Party Trays Ready to Go",
+    title: "Group Orders Made Easy",
     description:
-      "Hosting something? Our catering trays are packed with the same dishes our regulars love — just in bigger servings.",
+      "Need food for a meeting, office lunch, or simple celebration? Our catering trays are practical, delicious, and easy to arrange.",
   },
 ];
 
@@ -31,11 +31,11 @@ export default function WhyUs() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-14">
           <h2 className="text-3xl sm:text-4xl font-bold text-charcoal mb-4">
-            Why People Keep Coming Back
+            Why People Choose Y Kitchen
           </h2>
           <p className="text-lg text-charcoal-light max-w-2xl mx-auto">
-            It&apos;s pretty simple — we cook good food, we don&apos;t overcharge,
-            and we show up every day. That&apos;s it.
+            At Y Kitchen, we focus on what matters most: good food, fair prices,
+            and a convenient experience for everyday customers and group orders.
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
