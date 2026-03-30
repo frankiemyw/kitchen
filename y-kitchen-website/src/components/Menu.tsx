@@ -3,18 +3,18 @@ const menuCategories = [
     name: "Chicken or Pork Meals",
     items: [
       {
-        name: "1 Entree + Rice",
-        description: "Choice of chicken or pork dish with steamed rice",
+        name: "1 Ulam + Rice",
+        description: "Pick any chicken or pork dish, served with steamed rice",
         price: "₱109",
       },
       {
-        name: "1 Entree + Rice + Veggies",
-        description: "Chicken or pork dish with vegetables and steamed rice",
+        name: "1 Ulam + Rice + Gulay",
+        description: "Chicken or pork with a side of vegetables and rice",
         price: "₱139",
       },
       {
-        name: "2 Entrees + Rice",
-        description: "Two chicken or pork dishes with steamed rice",
+        name: "2 Ulam + Rice",
+        description: "Two dishes, one rice — for the extra-hungry",
         price: "₱170",
       },
     ],
@@ -28,13 +28,13 @@ const menuCategories = [
         price: "₱129",
       },
       {
-        name: "1 Beef + Rice + Veggies",
-        description: "Beef dish with vegetables and steamed rice",
+        name: "1 Beef + Rice + Gulay",
+        description: "Beef with a side of vegetables and rice",
         price: "₱150",
       },
       {
-        name: "2 Entrees + Rice (w/ Beef)",
-        description: "Two entrees including a beef dish, with steamed rice",
+        name: "2 Ulam + Rice (with Beef)",
+        description: "Two dishes including beef, with rice",
         price: "₱180",
       },
     ],
@@ -43,28 +43,28 @@ const menuCategories = [
     name: "Vegetable Meals",
     items: [
       {
-        name: "1 Vegetables + Rice",
-        description: "Choice of vegetable dish with steamed rice",
+        name: "1 Gulay + Rice",
+        description: "A vegetable dish with steamed rice — light and satisfying",
         price: "₱90",
       },
     ],
   },
   {
-    name: "Sample Dishes",
-    subtitle: "Available dishes rotate daily. Here are some favorites:",
+    name: "What We Cook",
+    subtitle: "Our dishes change daily, but these are the ones you'll find most often:",
     items: [
-      { name: "Chicken Adobo", description: "Classic soy-vinegar braised chicken", price: "" },
-      { name: "Pork Sinigang", description: "Tangy tamarind pork soup with vegetables", price: "" },
-      { name: "Giniling", description: "Savory ground pork with potatoes and carrots", price: "" },
-      { name: "Chicken Curry", description: "Creamy coconut curry with tender chicken", price: "" },
-      { name: "Beef Caldereta", description: "Rich tomato-based beef stew", price: "" },
-      { name: "Bistek Tagalog", description: "Soy-citrus marinated beef with onions", price: "" },
-      { name: "Pinakbet", description: "Sautéed mixed vegetables with shrimp paste", price: "" },
-      { name: "Chopsuey", description: "Stir-fried mixed vegetables", price: "" },
-      { name: "Tortang Talong", description: "Grilled eggplant omelette", price: "" },
-      { name: "Bangus Belly", description: "Pan-fried milkfish belly, crispy and flavorful", price: "" },
-      { name: "Menudo", description: "Pork and liver stew with potatoes and carrots", price: "" },
-      { name: "Pork Adobo", description: "Braised pork in soy-vinegar sauce", price: "" },
+      { name: "Chicken Adobo", description: "The classic — soy, vinegar, garlic", price: "" },
+      { name: "Pork Sinigang", description: "Sour tamarind soup with pork and veggies", price: "" },
+      { name: "Giniling", description: "Ground pork with potatoes and carrots", price: "" },
+      { name: "Chicken Curry", description: "Coconut milk curry, mildly spiced", price: "" },
+      { name: "Beef Caldereta", description: "Tomato-based beef stew, rich and hearty", price: "" },
+      { name: "Bistek Tagalog", description: "Beef marinated in soy and calamansi, topped with onions", price: "" },
+      { name: "Pinakbet", description: "Mixed vegetables with bagoong", price: "" },
+      { name: "Chopsuey", description: "Stir-fried veggies in a savory sauce", price: "" },
+      { name: "Tortang Talong", description: "Eggplant omelette, crispy on the outside", price: "" },
+      { name: "Bangus Belly", description: "Pan-fried milkfish — crispy, flaky, perfect", price: "" },
+      { name: "Menudo", description: "Pork and liver stew with potatoes", price: "" },
+      { name: "Pork Adobo", description: "Same classic flavor, pork version", price: "" },
     ],
   },
   {
@@ -88,8 +88,8 @@ export default function Menu() {
             Our Menu
           </h2>
           <p className="text-lg text-charcoal-light max-w-2xl mx-auto">
-            Freshly-cooked Filipino meals every day. All meals include free
-            soup and water.
+            Everything is cooked fresh each day. Every meal comes with
+            free soup and water — walang dagdag na bayad.
           </p>
         </div>
 
@@ -142,7 +142,7 @@ export default function Menu() {
 
         <div className="text-center mt-12">
           <p className="text-sm text-charcoal-light">
-            Dishes rotate daily. Prices are subject to change.
+            Dishes rotate daily depending on what&apos;s fresh. Prices may change without notice.
           </p>
         </div>
       </div>

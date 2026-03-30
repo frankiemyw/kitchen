@@ -40,9 +40,9 @@ export default function Catering() {
             Catering &amp; Party Trays
           </h2>
           <p className="text-lg text-charcoal-light max-w-2xl mx-auto">
-            Feeding a team, a department, or an entire event? Our freshly-cooked
-            party trays are trusted by government agencies, corporations, LGUs,
-            and organizations of all sizes.
+            Need to feed a crowd? We prepare the same dishes our regulars love
+            — packed in generous trays, ready for your team, your office,
+            or your celebration.
           </p>
         </div>
 
@@ -52,7 +52,7 @@ export default function Catering() {
               key={tray.name}
               className="bg-warm-white rounded-2xl p-6 border border-gray-100 hover:shadow-md transition-shadow"
             >
-              {/* Tray image placeholder */}
+              {/* Tray image placeholder — replace with actual photo */}
               <div className="aspect-[3/2] bg-warm-gray rounded-xl mb-4 flex items-center justify-center">
                 <span className="text-sm text-charcoal-light">
                   [Photo: {tray.name}]
@@ -69,30 +69,30 @@ export default function Catering() {
 
         <div className="bg-charcoal rounded-2xl p-8 sm:p-12 text-center">
           <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4">
-            Need Catering for Your Organization?
+            Let Us Handle the Food
           </h3>
           <p className="text-gray-300 max-w-xl mx-auto mb-8">
-            We cater for government offices, corporate meetings, LGU events,
-            team lunches, and private celebrations. Let us handle the food
-            so you can focus on what matters.
+            We work with government offices, LGUs, corporations, and all kinds
+            of organizations — big and small. Tell us how many people,
+            pick your dishes, and we&apos;ll take care of the rest.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="#contact"
               className="bg-gold text-charcoal px-8 py-3.5 rounded-full text-lg font-semibold hover:bg-gold-light transition-colors"
             >
-              Send an Inquiry
+              Send Us a Message
             </a>
             <a
               href="tel:[YOUR-PHONE-NUMBER]"
               className="border-2 border-white text-white px-8 py-3.5 rounded-full text-lg font-semibold hover:bg-white hover:text-charcoal transition-colors"
             >
-              Call Us Now
+              Call Us Directly
             </a>
           </div>
           <p className="text-xs text-gray-400 mt-6">
-            We accept orders at least 2 days in advance. Custom tray
-            combinations and bulk orders available upon request.
+            Just give us at least 2 days&apos; notice. We can also customize
+            trays and handle bulk orders — just ask.
           </p>
         </div>
       </div>

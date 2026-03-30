@@ -4,15 +4,16 @@ export default function Location() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-14">
           <h2 className="text-3xl sm:text-4xl font-bold text-charcoal mb-4">
-            Find Us
+            Come Visit Us
           </h2>
           <p className="text-lg text-charcoal-light">
-            Visit us for dine-in or get in touch for orders and inquiries.
+            Drop by for a meal, or get in touch if you need catering.
+            We&apos;d love to hear from you.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-          {/* Map placeholder */}
+          {/* Map placeholder — replace with a Google Maps embed */}
           <div className="aspect-[4/3] lg:aspect-auto bg-warm-gray rounded-2xl flex items-center justify-center min-h-[300px]">
             <div className="text-center text-charcoal-light">
               <p className="text-sm mb-2">
@@ -27,10 +28,10 @@ export default function Location() {
           <div className="space-y-8">
             <div>
               <h3 className="text-sm font-semibold text-red-brand uppercase tracking-wider mb-2">
-                Address
+                Where We Are
               </h3>
               <p className="text-charcoal-light leading-relaxed">
-                {/* REPLACE: Update with actual address */}
+                {/* REPLACE: Put your actual address here */}
                 [Your Street Address]
                 <br />
                 [Barangay, City, Province]
@@ -41,7 +42,7 @@ export default function Location() {
 
             <div>
               <h3 className="text-sm font-semibold text-red-brand uppercase tracking-wider mb-2">
-                Operating Hours
+                When We&apos;re Open
               </h3>
               <div className="text-charcoal-light space-y-1">
                 <p>Monday – Saturday: 7:00 AM – 7:00 PM</p>
@@ -51,10 +52,10 @@ export default function Location() {
 
             <div>
               <h3 className="text-sm font-semibold text-red-brand uppercase tracking-wider mb-2">
-                Contact
+                Get in Touch
               </h3>
               <div className="text-charcoal-light space-y-1">
-                {/* REPLACE: Update with actual contact details */}
+                {/* REPLACE: Put your real contact details here */}
                 <p>
                   Phone:{" "}
                   <a

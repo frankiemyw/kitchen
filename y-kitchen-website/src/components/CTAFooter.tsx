@@ -5,24 +5,24 @@ export default function CTAFooter() {
       <div className="py-16 border-b border-charcoal-light">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-            Hungry? Let&apos;s Fix That.
+            Gutom na? Tara, kain.
           </h2>
           <p className="text-gray-300 max-w-xl mx-auto mb-8">
-            Visit us for a freshly-cooked meal — or get in touch for catering,
-            party trays, and daily canteen service for your organization.
+            Swing by for a freshly-cooked meal, or let us know if you need
+            catering for your next event. We&apos;re just a call or message away.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="#menu"
               className="bg-red-brand text-white px-8 py-3.5 rounded-full text-lg font-semibold hover:bg-red-dark transition-colors"
             >
-              See the Menu
+              Check the Menu
             </a>
             <a
               href="#catering"
               className="bg-gold text-charcoal px-8 py-3.5 rounded-full text-lg font-semibold hover:bg-gold-light transition-colors"
             >
-              Order Catering
+              Order Party Trays
             </a>
           </div>
         </div>
@@ -35,8 +35,9 @@ export default function CTAFooter() {
             <div>
               <h3 className="text-xl font-bold text-gold mb-3">Y Kitchen</h3>
               <p className="text-sm text-gray-400 leading-relaxed">
-                Freshly-cooked Filipino meals for everyday hunger.
-                Dine-in, canteen service, catering, and party trays.
+                Freshly-cooked Filipino meals, every day. Dine-in, canteen
+                service, catering, and party trays — for everyone from solo
+                lunchers to 100-person events.
               </p>
             </div>
             <div>

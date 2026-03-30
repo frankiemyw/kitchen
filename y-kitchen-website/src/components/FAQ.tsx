@@ -4,39 +4,39 @@ import { useState } from "react";
 
 const faqs = [
   {
-    question: "What are your meal prices?",
+    question: "How much do meals cost?",
     answer:
-      "Our meals start at ₱90 for a vegetable dish with rice. Chicken or pork with rice is ₱109. Add veggies for ₱139. Beef meals start at ₱129. Two-entree combos are ₱170–₱180. All meals come with free soup and water.",
+      "A veggie meal with rice is ₱90. Chicken or pork with rice starts at ₱109, or ₱139 if you add a side of vegetables. Beef meals go from ₱129 to ₱150. If you're extra hungry, two-dish combos are ₱170–₱180. Every meal comes with free soup and water.",
   },
   {
-    question: "Do you accept catering orders?",
+    question: "Do you do catering?",
     answer:
-      "Yes! We offer party trays for government offices, corporate events, LGU functions, team lunches, birthdays, and more. Please place your order at least 2 days in advance. Call us or send an inquiry through the website.",
+      "Yes — it's actually one of the things we do best. We prepare party trays for offices, government agencies, corporate events, LGU functions, birthdays, you name it. Just give us at least 2 days' notice so we can get everything ready.",
   },
   {
-    question: "Who do you serve?",
+    question: "Can we set up a daily meal arrangement for our office?",
     answer:
-      "We serve everyone — from individual dine-in customers to large organizations. Our regular clients include government agencies, LGUs, corporations, office workers, condo residents, and group buyers of all kinds.",
+      "Absolutely. We already do this for several organizations. If your team needs regular lunches — daily, weekly, or for specific events — reach out and we'll work something out that fits your schedule and budget.",
   },
   {
-    question: "Do you offer delivery?",
+    question: "Is the food really cooked fresh every day?",
     answer:
-      "We serve dine-in customers and accept pick-up orders for party trays. For delivery, you can reach us through popular food delivery apps. Contact us for details.",
+      "Yes, every single day. We don't cook ahead and reheat. Our team starts early each morning to prep and cook everything from scratch. What you're eating was made that same day.",
   },
   {
-    question: "Can I customize my catering order?",
+    question: "Can I mix and match dishes for catering?",
     answer:
-      "Absolutely. We can mix and match dishes for your party trays based on your preferences and budget. Custom tray combinations and bulk orders are available upon request.",
+      "Of course. You can pick which dishes go into your trays. Just tell us your preferences — or your budget — and we'll put together a combination that works.",
   },
   {
-    question: "What time do you open?",
+    question: "Do you deliver?",
     answer:
-      "We're open Monday to Saturday from 7:00 AM to 7:00 PM, and Sundays from 8:00 AM to 5:00 PM.",
+      "For dine-in, come visit us directly. For party trays and catering, we can arrange delivery depending on the order size and location. You can also find us on popular food delivery apps — just ask us for details.",
   },
   {
-    question: "Do you offer canteen or daily meal service?",
+    question: "What are your hours?",
     answer:
-      "Yes. We can set up daily meal service for offices, agencies, and organizations. Contact us to discuss a regular arrangement that works for your team.",
+      "We're open Monday to Saturday from 7 AM to 7 PM, and Sundays from 8 AM to 5 PM. We're here early because a lot of our customers want lunch sorted before noon.",
   },
 ];
 
@@ -89,10 +89,10 @@ export default function FAQ() {
       <div className="max-w-3xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-14">
           <h2 className="text-3xl sm:text-4xl font-bold text-charcoal mb-4">
-            Frequently Asked Questions
+            Questions? We Got You.
           </h2>
           <p className="text-lg text-charcoal-light">
-            Got questions? We&apos;ve got answers.
+            Here&apos;s what people usually ask us.
           </p>
         </div>
         <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm">

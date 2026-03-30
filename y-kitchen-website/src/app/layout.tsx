@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Y Kitchen — Freshly-Cooked Filipino Meals, Catering & Party Trays",
   description:
-    "Y Kitchen serves freshly-cooked, affordable Filipino meals for dine-in, canteen service, catering, and party trays. Trusted by government agencies, LGUs, corporations, and organizations. Starting at ₱90.",
+    "Fresh Filipino food cooked from scratch every morning. Meals from ₱90 with free soup and water. Dine-in, catering, and party trays for offices, government agencies, and events of any size.",
   keywords: [
     "Filipino food",
     "freshly-cooked meals",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Y Kitchen — Freshly-Cooked Filipino Meals, Catering & Party Trays",
     description:
-      "Freshly-cooked Filipino meals starting at ₱90. Dine-in, canteen service, catering, and party trays for government agencies, corporations, and organizations.",
+      "Fresh Filipino food cooked from scratch every morning. Meals from ₱90 with free soup and water. Dine-in, catering, and party trays for any occasion.",
     type: "website",
     locale: "en_PH",
     siteName: "Y Kitchen",
@@ -50,7 +50,7 @@ export default function RootLayout({
               "@type": "Restaurant",
               name: "Y Kitchen",
               description:
-                "Freshly-cooked, affordable Filipino meals for dine-in, canteen service, catering, and party trays.",
+                "Fresh Filipino food cooked from scratch every day. Affordable meals, catering, and party trays.",
               servesCuisine: "Filipino",
               priceRange: "₱",
               address: {
