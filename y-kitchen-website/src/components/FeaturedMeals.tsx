@@ -2,39 +2,37 @@ import { featuredMeals } from "@/data/menu";
 
 export default function FeaturedMeals() {
   return (
-    <section className="py-20 bg-white">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="text-center mb-14">
-          <h2 className="text-3xl sm:text-4xl font-bold text-charcoal mb-4">
+    <section className="py-16 sm:py-24 bg-white">
+      <div className="max-w-6xl mx-auto px-5 sm:px-6">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl font-bold text-charcoal mb-4 tracking-tight">
             Customer Favorites
           </h2>
-          <p className="text-lg text-charcoal-light max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-charcoal-muted max-w-xl mx-auto">
             From Filipino classics to practical set meals, these are some of the
-            options customers can enjoy at Y Kitchen.
+            options customers enjoy at Y Kitchen.
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {featuredMeals.map((meal) => (
             <div
               key={meal.name}
-              className="group rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition-shadow"
+              className="group rounded-2xl overflow-hidden border border-warm-border hover:shadow-lg transition-shadow bg-white"
             >
               {/* Replace with actual food photo */}
-              <div className="aspect-[4/3] bg-warm-gray flex items-center justify-center">
-                <span className="text-charcoal-light text-sm">
+              <div className="aspect-[4/3] bg-warm-gray flex items-center justify-center relative">
+                <span className="text-charcoal-muted text-sm">
                   [Photo: {meal.name}]
+                </span>
+                <span className="absolute bottom-3 right-3 bg-charcoal text-white text-sm font-bold px-3 py-1 rounded-full">
+                  {meal.price}
                 </span>
               </div>
               <div className="p-5">
-                <div className="flex items-start justify-between mb-2">
-                  <h3 className="text-base font-semibold text-charcoal">
-                    {meal.name}
-                  </h3>
-                  <span className="text-base font-bold text-red-brand whitespace-nowrap ml-3">
-                    {meal.price}
-                  </span>
-                </div>
-                <p className="text-sm text-charcoal-light leading-relaxed">
+                <h3 className="text-base font-semibold text-charcoal mb-1.5">
+                  {meal.name}
+                </h3>
+                <p className="text-sm text-charcoal-muted leading-relaxed">
                   {meal.description}
                 </p>
               </div>

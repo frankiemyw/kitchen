@@ -6,19 +6,31 @@
   --color-red-dark: #8E0000;
   --color-gold: #F9A825;
   --color-gold-light: #FDD835;
-  --color-charcoal: #212121;
-  --color-charcoal-light: #424242;
-  --color-warm-white: #FFF8F0;
-  --color-warm-gray: #F5F0EB;
+  --color-gold-dark: #C17900;
+  --color-charcoal: #1A1A1A;
+  --color-charcoal-light: #4A4A4A;
+  --color-charcoal-muted: #6B6B6B;
+  --color-warm-white: #FFFAF5;
+  --color-warm-gray: #F3EDE7;
+  --color-warm-border: #E8E0D8;
   --font-sans: "Inter", system-ui, -apple-system, sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
   background: #ffffff;
-  color: #212121;
+  color: var(--color-charcoal);
   font-family: var(--font-sans);
+  line-height: 1.6;
+}
+
+/* Refined heading rhythm */
+h1, h2, h3, h4 {
+  line-height: 1.2;
+  letter-spacing: -0.01em;
 }
