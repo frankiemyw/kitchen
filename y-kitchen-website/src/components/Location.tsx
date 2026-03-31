@@ -15,12 +15,18 @@ export default function Location() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-          {/* Replace with embedded Google Map */}
-          <div className="aspect-[4/3] lg:aspect-auto bg-warm-gray rounded-2xl flex items-center justify-center min-h-[320px]">
-            <div className="text-center text-charcoal-muted">
-              <p className="text-sm mb-1">[Embed Google Map here]</p>
-              <p className="text-xs">Replace with Google Maps iframe</p>
-            </div>
+          <div className="aspect-[4/3] lg:aspect-auto bg-warm-gray rounded-2xl overflow-hidden min-h-[320px]">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.346202388079!2d121.05027827509689!3d14.579338177596894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9063fc7ca09%3A0xc8578c23a7e2b191!2sY%20Kitchen!5e0!3m2!1sen!2sph!4v1774922878997!5m2!1sen!2sph"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Y Kitchen Location Map"
+              className="w-full h-full min-h-[320px]"
+            />
           </div>
 
           <div className="space-y-6">
@@ -49,7 +55,11 @@ export default function Location() {
                 <div>
                   <span className="text-charcoal-muted text-xs block mb-0.5">Telephone</span>
                   {siteConfig.telephone.map((num) => (
-                    <a key={num} href={`tel:${num}`} className="block text-charcoal hover:text-red-brand transition-colors">
+                    <a
+                      key={num}
+                      href={`tel:${num}`}
+                      className="block text-charcoal hover:text-red-brand transition-colors"
+                    >
                       {num}
                     </a>
                   ))}
@@ -57,20 +67,32 @@ export default function Location() {
                 <div>
                   <span className="text-charcoal-muted text-xs block mb-0.5">Mobile</span>
                   {siteConfig.mobile.map((num) => (
-                    <a key={num} href={`tel:${num}`} className="block text-charcoal hover:text-red-brand transition-colors">
+                    <a
+                      key={num}
+                      href={`tel:${num}`}
+                      className="block text-charcoal hover:text-red-brand transition-colors"
+                    >
                       {num}
                     </a>
                   ))}
                 </div>
                 <div>
                   <span className="text-charcoal-muted text-xs block mb-0.5">Email</span>
-                  <a href={`mailto:${siteConfig.email}`} className="text-charcoal hover:text-red-brand transition-colors">
+                  <a
+                    href={`mailto:${siteConfig.email}`}
+                    className="text-charcoal hover:text-red-brand transition-colors"
+                  >
                     {siteConfig.email}
                   </a>
                 </div>
                 <div>
                   <span className="text-charcoal-muted text-xs block mb-0.5">Facebook</span>
-                  <a href={siteConfig.facebook} target="_blank" rel="noopener noreferrer" className="text-charcoal hover:text-red-brand transition-colors">
+                  <a
+                    href={siteConfig.facebook}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-charcoal hover:text-red-brand transition-colors"
+                  >
                     {siteConfig.facebookLabel}
                   </a>
                 </div>
