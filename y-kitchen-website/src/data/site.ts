@@ -16,7 +16,7 @@ export const siteConfig = {
   facebookLabel: "Y Kitchen on Facebook",
 
   // Hours — update when confirmed
-  hours: "[Insert business hours]",
+  hours: "[Mon - Fri: 1:00 AM - 8:00 PM | Sat: 1:00 AM - 2:00 PM]",
 
   // SEO
   seo: {
