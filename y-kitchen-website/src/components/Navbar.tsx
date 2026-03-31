@@ -4,8 +4,10 @@ import { useState } from "react";
 import { siteConfig } from "@/data/site";
 
 const navLinks = [
-  { label: "Menu", href: "#menu" },
+  { label: "Dine-In", href: "#dine-in" },
+  { label: "Group Meals", href: "#group-meals" },
   { label: "Catering", href: "#catering" },
+  { label: "Canteen Service", href: "#canteen-service" },
   { label: "About", href: "#about" },
   { label: "Contact", href: "#contact" },
 ];
