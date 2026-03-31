@@ -4,6 +4,7 @@ import { useState } from "react";
 import { siteConfig } from "@/data/site";
 
 const navLinks = [
+  { label: "Menu", href: "#menu" },
   { label: "Dine-In", href: "#dine-in" },
   { label: "Group Meals", href: "#group-meals" },
   { label: "Catering", href: "#catering" },
@@ -23,7 +24,6 @@ export default function Navbar() {
             {siteConfig.businessName}
           </a>
 
-          {/* Desktop */}
           <div className="hidden md:flex items-center gap-7">
             {navLinks.map((link) => (
               <a
@@ -42,7 +42,6 @@ export default function Navbar() {
             </a>
           </div>
 
-          {/* Mobile toggle */}
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="md:hidden p-2 -mr-2 text-charcoal"
@@ -59,7 +58,6 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile menu */}
       {isOpen && (
         <div className="md:hidden bg-white border-t border-warm-border">
           <div className="px-5 py-4 space-y-1">
