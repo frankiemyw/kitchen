@@ -1,5 +1,8 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import DineIn from "@/components/DineIn";
+import GroupMeals from "@/components/GroupMeals";
+import CanteenService from "@/components/CanteenService";
 import WhyUs from "@/components/WhyUs";
 import FeaturedMeals from "@/components/FeaturedMeals";
 import Menu from "@/components/Menu";
@@ -15,13 +18,17 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <WhyUs />
+        <DineIn />
         <FeaturedMeals />
+        <GroupMeals />
         <Menu />
         <Catering />
+        <CanteenService />
+        <WhyUs />
         <About />
         <Location />
         <FAQ />
+        <CTAFooter />
       </main>
       <CTAFooter />
     </>
