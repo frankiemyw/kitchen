@@ -14,21 +14,6 @@ export default function Catering() {
           </p>
         </div>
 
-        {/* Catering Gallery Showcase */}
-        <div className="mb-12 sm:mb-16">
-          <div className="relative rounded-2xl overflow-hidden shadow-lg">
-            <img
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/2%20%281%29-0PL7MXSNp0cvDgFZu6szjnHElyfSFA.png"
-              alt="Y Kitchen catering services showcasing buffet setups, party trays, and various Filipino dishes for events and celebrations"
-              className="w-full h-auto object-cover"
-              loading="eager"
-            />
-          </div>
-          <p className="text-center text-sm text-charcoal-muted mt-4">
-            From corporate events to celebrations, we bring delicious Filipino food to your gatherings
-          </p>
-        </div>
-
         <div className="bg-charcoal rounded-2xl p-8 sm:p-12 text-center">
           <h3 className="text-2xl sm:text-3xl font-bold text-white mb-3 tracking-tight">
             {cateringSection.ctaHeading}
