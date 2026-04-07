@@ -1,4 +1,3 @@
-import { cateringTrays } from "@/data/catering";
 import { siteConfig } from "@/data/site";
 import { cateringSection } from "@/data/content";
 
@@ -28,27 +27,6 @@ export default function Catering() {
           <p className="text-center text-sm text-charcoal-muted mt-4">
             From corporate events to celebrations, we bring delicious Filipino food to your gatherings
           </p>
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-12">
-          {cateringTrays.map((tray) => (
-            <div
-              key={tray.name}
-              className="bg-warm-white rounded-2xl overflow-hidden border border-warm-border hover:shadow-md transition-shadow"
-            >
-              <div className="p-5">
-                <h3 className="text-base font-semibold text-charcoal mb-1">
-                  {tray.name}
-                </h3>
-                <p className="text-xs font-medium text-red-brand mb-2">
-                  {tray.serving}
-                </p>
-                <p className="text-sm text-charcoal-muted leading-relaxed">
-                  {tray.description}
-                </p>
-              </div>
-            </div>
-          ))}
         </div>
 
         <div className="bg-charcoal rounded-2xl p-8 sm:p-12 text-center">
