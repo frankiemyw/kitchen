@@ -17,6 +17,7 @@ export const cateringTrays: CateringTray[] = [
     serving: "Good for 6–8 persons",
     description:
       "Hearty and flavorful, perfect for group meals and celebrations.",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/clipboard_image_a51794a8a801662ae4d5f955cd384e3b-6or44IqlQabzqAhsvkHAFGoURxWqHa.png",
   },
   {
     name: "Pancit Canton Tray",
