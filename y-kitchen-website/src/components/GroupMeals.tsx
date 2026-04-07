@@ -43,6 +43,15 @@ export default function GroupMeals() {
               key={tray.name}
               className="bg-white rounded-2xl overflow-hidden border border-warm-border hover:shadow-md transition-shadow"
             >
+              {tray.image && (
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img
+                    src={tray.image}
+                    alt={tray.name}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              )}
               <div className="p-5">
                 <h3 className="text-base font-semibold text-charcoal mb-1">
                   {tray.name}
