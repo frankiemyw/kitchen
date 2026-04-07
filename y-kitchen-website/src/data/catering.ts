@@ -2,6 +2,7 @@ export type CateringTray = {
   name: string;
   serving: string;
   description: string;
+  image?: string;
 };
 
 export const cateringTrays: CateringTray[] = [
@@ -10,35 +11,41 @@ export const cateringTrays: CateringTray[] = [
     serving: "Good for 6–8 persons",
     description:
       "A savory classic that works well for office meals and family gatherings.",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-M8LQpZWvz8WUswV5YufQpZtnfSwngZ.png",
   },
   {
     name: "Pork Menudo Tray",
     serving: "Good for 6–8 persons",
     description:
       "Hearty and flavorful, perfect for group meals and celebrations.",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/clipboard_image_a51794a8a801662ae4d5f955cd384e3b-6or44IqlQabzqAhsvkHAFGoURxWqHa.png",
   },
   {
     name: "Pancit Canton Tray",
     serving: "Good for 8–10 persons",
     description:
       "A Filipino gathering favorite that is easy to share and always welcome on the table.",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/clipboard_image_cf915579821362552c694c69c429e995-pQoau14cfS8Yr7OCxPmyWBop3dDvql.png",
   },
   {
     name: "Fried Chicken Tray",
     serving: "Good for 6–8 persons",
     description:
       "Crispy, crowd-friendly, and a reliable favorite for mixed groups.",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-6SHWsg0KjuuETlQJu5d8MUby4Hu0IW.png",
   },
   {
     name: "Mixed Vegetables Tray",
     serving: "Good for 6–8 persons",
     description:
       "A lighter dish that pairs well with any group order.",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image.png-8jvEwOIdYbKRtagDWhpvHjdotkFKUx.jpeg",
   },
   {
     name: "Rice Tray",
     serving: "Good for 8–10 persons",
     description:
       "The perfect add-on to complete any tray order.",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-JeDskhPTnfFb9AKLJhVcvOQsduGisy.png",
   },
 ];

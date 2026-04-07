@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { siteConfig } from "@/data/site";
 
 const navLinks = [
   { label: "Menu", href: "#menu" },
@@ -20,8 +19,12 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-warm-border">
       <div className="max-w-6xl mx-auto px-5 sm:px-6">
         <div className="flex items-center justify-between h-16">
-          <a href="#home" className="text-xl font-bold text-charcoal tracking-tight">
-            {siteConfig.businessName}
+          <a href="#home" className="flex items-center">
+            <img 
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-LuD9w7ui6yJZjflxbO5V3RlISWtsEp.png" 
+              alt="Y Kitchen"
+              className="h-12 w-auto"
+            />
           </a>
 
           <div className="hidden md:flex items-center gap-7">
