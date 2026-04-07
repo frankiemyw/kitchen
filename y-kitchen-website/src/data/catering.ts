@@ -11,6 +11,7 @@ export const cateringTrays: CateringTray[] = [
     serving: "Good for 6–8 persons",
     description:
       "A savory classic that works well for office meals and family gatherings.",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-M8LQpZWvz8WUswV5YufQpZtnfSwngZ.png",
   },
   {
     name: "Pork Menudo Tray",
@@ -38,11 +39,13 @@ export const cateringTrays: CateringTray[] = [
     serving: "Good for 6–8 persons",
     description:
       "A lighter dish that pairs well with any group order.",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image.png-8jvEwOIdYbKRtagDWhpvHjdotkFKUx.jpeg",
   },
   {
     name: "Rice Tray",
     serving: "Good for 8–10 persons",
     description:
       "The perfect add-on to complete any tray order.",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-JeDskhPTnfFb9AKLJhVcvOQsduGisy.png",
   },
 ];
