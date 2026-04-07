@@ -88,7 +88,7 @@ export const menuSection = {
 // ============================================
 
 export const cateringSection = {
-  heading: "Party Trays and Group Orders",
+  heading: "Catering",
   description:
     "Planning a team lunch, office meal, or simple celebration? Our trays are practical, delicious, and easy to order for groups of any size.",
   ctaHeading: "Need trays for your team or event?",
