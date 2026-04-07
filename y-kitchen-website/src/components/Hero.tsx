@@ -7,7 +7,12 @@ export default function Hero() {
       id="home"
       className="relative min-h-[92vh] flex items-center bg-charcoal pt-16"
     >
-      <div className="absolute inset-0 bg-gradient-to-b from-charcoal/95 via-charcoal/80 to-charcoal" />
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-czpEq6x1iULaikgOlfkVHbv73exwmT.png')" }}
+      />
+      <div className="absolute inset-0 bg-gradient-to-b from-charcoal/70 via-charcoal/60 to-charcoal/80" />
 
       <div className="relative z-10 max-w-3xl mx-auto px-5 sm:px-6 py-16 sm:py-24 text-center">
         <div className="inline-flex items-center gap-2 bg-gold/15 text-gold-light text-sm font-medium px-4 py-1.5 rounded-full mb-8">
