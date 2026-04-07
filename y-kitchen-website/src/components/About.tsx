@@ -6,11 +6,12 @@ export default function About() {
     <section id="about" className="py-16 sm:py-24 bg-warm-white">
       <div className="max-w-6xl mx-auto px-5 sm:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-          {/* Replace with photo of Y Kitchen interior, food spread, or team */}
-          <div className="aspect-[4/3] bg-warm-gray rounded-2xl flex items-center justify-center order-2 lg:order-1">
-            <span className="text-charcoal-muted text-sm">
-              [Photo: {siteConfig.businessName} interior or team]
-            </span>
+          <div className="aspect-[4/3] rounded-2xl overflow-hidden order-2 lg:order-1">
+            <img
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-dCT7ikxFnabUGrPMfknvAnR3Z5VDVu.png"
+              alt="Y Kitchen chef cooking with flames in professional kitchen"
+              className="w-full h-full object-cover"
+            />
           </div>
 
           <div className="order-1 lg:order-2">
