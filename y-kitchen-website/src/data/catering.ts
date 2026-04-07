@@ -31,7 +31,7 @@ export const cateringTrays: CateringTray[] = [
     serving: "Good for 6–8 persons",
     description:
       "Crispy, crowd-friendly, and a reliable favorite for mixed groups.",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/clipboard_image_4b8e60ca4ca67878f38e156c4dccc101-F7t3Y7xip3O6fUZslTKJNzPdlQPNGK.png",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-6SHWsg0KjuuETlQJu5d8MUby4Hu0IW.png",
   },
   {
     name: "Mixed Vegetables Tray",
