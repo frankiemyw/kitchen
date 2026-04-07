@@ -1,6 +1,7 @@
 import { cateringTrays } from "@/data/catering";
 import { siteConfig } from "@/data/site";
 import { cateringSection } from "@/data/content";
+import Image from "next/image";
 
 export default function Catering() {
   return (
@@ -15,18 +16,29 @@ export default function Catering() {
           </p>
         </div>
 
+        {/* Catering Gallery Showcase */}
+        <div className="mb-12 sm:mb-16">
+          <div className="relative rounded-2xl overflow-hidden shadow-lg">
+            <Image
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/2%20%281%29-0PL7MXSNp0cvDgFZu6szjnHElyfSFA.png"
+              alt="Y Kitchen catering services showcasing buffet setups, party trays, and various Filipino dishes for events and celebrations"
+              width={1200}
+              height={800}
+              className="w-full h-auto object-cover"
+              priority
+            />
+          </div>
+          <p className="text-center text-sm text-charcoal-muted mt-4">
+            From corporate events to celebrations, we bring delicious Filipino food to your gatherings
+          </p>
+        </div>
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-12">
           {cateringTrays.map((tray) => (
             <div
               key={tray.name}
               className="bg-warm-white rounded-2xl overflow-hidden border border-warm-border hover:shadow-md transition-shadow"
             >
-              {/* Replace with actual tray photo */}
-              <div className="aspect-[5/3] bg-warm-gray flex items-center justify-center">
-                <span className="text-sm text-charcoal-muted">
-                  [Photo: {tray.name}]
-                </span>
-              </div>
               <div className="p-5">
                 <h3 className="text-base font-semibold text-charcoal mb-1">
                   {tray.name}
