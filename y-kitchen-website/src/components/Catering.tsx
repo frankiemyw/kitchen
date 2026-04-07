@@ -18,8 +18,8 @@ export default function Catering() {
         <div className="mb-12 sm:mb-16">
           <div className="relative rounded-2xl overflow-hidden shadow-lg">
             <img
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image.png-inwkNTEAHDGpt8y8k8vwF4o3pJ0UdO.jpeg"
-              alt="Y Kitchen catering setup at a formal event with elegantly set round table featuring Filipino dishes"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/2%20%281%29-0PL7MXSNp0cvDgFZu6szjnHElyfSFA.png"
+              alt="Y Kitchen catering services showcasing buffet setups, party trays, and various Filipino dishes for events and celebrations"
               className="w-full h-auto object-cover"
               loading="eager"
             />
