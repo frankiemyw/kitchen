@@ -1,7 +1,6 @@
 import { cateringTrays } from "@/data/catering";
 import { siteConfig } from "@/data/site";
 import { cateringSection } from "@/data/content";
-import Image from "next/image";
 
 export default function Catering() {
   return (
@@ -19,13 +18,11 @@ export default function Catering() {
         {/* Catering Gallery Showcase */}
         <div className="mb-12 sm:mb-16">
           <div className="relative rounded-2xl overflow-hidden shadow-lg">
-            <Image
+            <img
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/2%20%281%29-0PL7MXSNp0cvDgFZu6szjnHElyfSFA.png"
               alt="Y Kitchen catering services showcasing buffet setups, party trays, and various Filipino dishes for events and celebrations"
-              width={1200}
-              height={800}
               className="w-full h-auto object-cover"
-              priority
+              loading="eager"
             />
           </div>
           <p className="text-center text-sm text-charcoal-muted mt-4">
