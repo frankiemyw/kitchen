@@ -23,6 +23,7 @@ export const cateringTrays: CateringTray[] = [
     serving: "Good for 8–10 persons",
     description:
       "A Filipino gathering favorite that is easy to share and always welcome on the table.",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/clipboard_image_cf915579821362552c694c69c429e995-pQoau14cfS8Yr7OCxPmyWBop3dDvql.png",
   },
   {
     name: "Fried Chicken Tray",
