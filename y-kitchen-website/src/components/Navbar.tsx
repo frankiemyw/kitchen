@@ -9,6 +9,7 @@ const navLinks = [
   { label: "Catering", href: "#catering" },
   { label: "Canteen Service", href: "#canteen-service" },
   { label: "About", href: "#about" },
+  { label: "FAQ", href: "#faq" },
   { label: "Contact", href: "#contact" },
 ];
 
